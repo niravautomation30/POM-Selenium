@@ -1,5 +1,6 @@
 package multiplewindow;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import basetest.BaseTest;
@@ -12,17 +13,19 @@ public class MultipleWindowTest extends BaseTest {
 		
 		MultipleWindowsPage mulWinPage=homePage.clickOnMultipleWindows();	
 		
-		System.out.println("Parentwindow Title :"+mulWinPage.getTitleOfWindow());
+		String str_parent_win_title=mulWinPage.getTitleOfWindow();
+		System.out.println("Parentwindow Title :"+str_parent_win_title);
 		System.out.println("Parentwindow Heading :"+mulWinPage.getWindowHeading());
 		System.out.println("Parentwindow ID :"+mulWinPage.getPatentWindowID());
-		
+		Assert.assertEquals(str_parent_win_title, "The Internet", "str_parent_win_title is INCORRECT");
 		mulWinPage.triggerClick();
 		mulWinPage.moveToChildWindow();
 		
-		System.out.println("Childwindow Title :"+mulWinPage.getTitleOfWindow());
+		String str_child_win_title= mulWinPage.getTitleOfWindow();
+		System.out.println("Childwindow Title :"+str_child_win_title);
 		System.out.println("Childwindow Heading :"+mulWinPage.getWindowHeading());
 		System.out.println("Childwindow ID :"+mulWinPage.getChildWindowID());
-		
+		Assert.assertEquals(str_child_win_title, "New Window", "str_child_win_title is INCORRECT");
 		mulWinPage.closeNewOpenWindow();
 		System.out.println("-----Close Child window------");
 		
