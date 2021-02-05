@@ -19,5 +19,10 @@ public class HomePage {
 		clickLink("JavaScript Alerts");
 		return new AlertPage(driver);
 	}
+	
+	public MultipleWindowsPage clickOnMultipleWindows() {
+		clickLink("Multiple Windows");
+		return new MultipleWindowsPage(driver);
+	}
 
 }
