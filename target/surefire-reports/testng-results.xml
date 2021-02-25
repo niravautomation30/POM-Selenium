@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-25T19:14:19 IST" name="Suite" finished-at="2021-02-25T19:14:49 IST" duration-ms="29944">
+    <groups>
+    </groups>
+    <test started-at="2021-02-25T19:14:19 IST" name="Test" finished-at="2021-02-25T19:14:49 IST" duration-ms="29944">
+      <class name="alerts.AlertTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:19 IST" name="setUp" finished-at="2021-02-25T19:14:29 IST" duration-ms="9974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:30 IST" name="goHome" finished-at="2021-02-25T19:14:38 IST" duration-ms="8633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testAlertAccept()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:38 IST" name="testAlertAccept" finished-at="2021-02-25T19:14:41 IST" duration-ms="2617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAlertAccept -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:41 IST" name="goHome" finished-at="2021-02-25T19:14:42 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testJSConfirmAccept()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:42 IST" name="testJSConfirmAccept" finished-at="2021-02-25T19:14:42 IST" duration-ms="791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJSConfirmAccept -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:42 IST" name="goHome" finished-at="2021-02-25T19:14:43 IST" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testJSConfirmCancel()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:43 IST" name="testJSConfirmCancel" finished-at="2021-02-25T19:14:44 IST" duration-ms="797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJSConfirmCancel -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:44 IST" name="goHome" finished-at="2021-02-25T19:14:46 IST" duration-ms="2455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testPromptWithValueAndOK()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:46 IST" name="testPromptWithValueAndOK" finished-at="2021-02-25T19:14:47 IST" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPromptWithValueAndOK -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:47 IST" name="goHome" finished-at="2021-02-25T19:14:48 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testPromptWithoutValueAndCancle()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:48 IST" name="testPromptWithoutValueAndCancle" finished-at="2021-02-25T19:14:48 IST" duration-ms="817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPromptWithoutValueAndCancle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:alerts.AlertTest@7bb58ca3]" started-at="2021-02-25T19:14:48 IST" name="tearDown" finished-at="2021-02-25T19:14:49 IST" duration-ms="860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- alerts.AlertTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
