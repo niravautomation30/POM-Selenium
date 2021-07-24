@@ -1,5 +1,6 @@
 package multiplewindow;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,8 +9,12 @@ import pages.MultipleWindowsPage;
 
 public class MultipleWindowTest extends BaseTest {
 
+	Logger log = Logger.getLogger(MultipleWindowTest.class);
+	
 	@Test
 	public void testMultipleWindow() {
+		
+		log.info("\n===========Start testMultipleWindow method============");
 		
 		MultipleWindowsPage mulWinPage=homePage.clickOnMultipleWindows();	
 		
@@ -35,5 +40,6 @@ public class MultipleWindowTest extends BaseTest {
 		System.out.println("Parentwindow Heading :"+mulWinPage.getWindowHeading());
 		System.out.println("Parentwindow ID :"+mulWinPage.getPatentWindowID());
 		
+		log.info("\n===========End testMultipleWindow method============");
 	}
 }

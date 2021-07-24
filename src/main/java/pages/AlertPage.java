@@ -46,5 +46,4 @@ public class AlertPage {
 	public String getResult() {
 		return driver.findElement(result).getText();
 	}
-
 }

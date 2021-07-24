@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="31.95" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="61.982" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="webdriver.chrome.driver" value="/home/nirav/.cache/selenium/chromedriver/linux64/88.0.4324.96/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-15.0.2/lib"/>
-    <property name="sun.java.command" value="/home/nirav/eclipse-workspace/PageObjectModelDemo/target/surefire/surefirebooter13226585219843895827.jar /home/nirav/eclipse-workspace/PageObjectModelDemo/target/surefire 2021-02-25T19-14-17_257-jvmRun1 surefire15181026679084282051tmp surefire_013999916680162406045tmp"/>
+    <property name="sun.java.command" value="/home/nirav/eclipse-workspace/PageObjectModelDemo/target/surefire/surefirebooter10599110765559087156.jar /home/nirav/eclipse-workspace/PageObjectModelDemo/target/surefire 2021-02-26T16-54-38_596-jvmRun1 surefire4809064281839326565tmp surefire_0430883199196657642tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/nirav/eclipse-workspace/PageObjectModelDemo/target/test-classes:/home/nirav/eclipse-workspace/PageObjectModelDemo/target/classes:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/nirav/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/nirav/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/nirav/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/nirav/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/nirav/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/nirav/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/nirav/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/nirav/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/nirav/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/nirav/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/nirav/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/nirav/.m2/repository/io/github/bonigarcia/webdrivermanager/4.3.1/webdrivermanager-4.3.1.jar:/home/nirav/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/nirav/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/home/nirav/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/nirav/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/nirav/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/home/nirav/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/home/nirav/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/home/nirav/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/home/nirav/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/home/nirav/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/home/nirav/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/home/nirav/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/home/nirav/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/nirav/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/home/nirav/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/home/nirav/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/nirav/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/nirav/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/home/nirav/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/nirav/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/nirav/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/nirav/eclipse-workspace/PageObjectModelDemo/target/surefire/surefirebooter13226585219843895827.jar"/>
+    <property name="surefire.real.class.path" value="/home/nirav/eclipse-workspace/PageObjectModelDemo/target/surefire/surefirebooter10599110765559087156.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
     <property name="user.name" value="nirav"/>
@@ -52,20 +52,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testAlertAccept" classname="alerts.AlertTest" time="2.629">
+  <testcase name="testAlertAccept" classname="alerts.AlertTest" time="3.389">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 29334
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 12565
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Feb 25, 2021 7:14:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Feb 26, 2021 4:55:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testJSConfirmAccept" classname="alerts.AlertTest" time="0.791"/>
-  <testcase name="testJSConfirmCancel" classname="alerts.AlertTest" time="0.796"/>
-  <testcase name="testPromptWithValueAndOK" classname="alerts.AlertTest" time="0.743"/>
-  <testcase name="testPromptWithoutValueAndCancle" classname="alerts.AlertTest" time="0.817"/>
+  <testcase name="testJSConfirmAccept" classname="alerts.AlertTest" time="0.703"/>
+  <testcase name="testJSConfirmCancel" classname="alerts.AlertTest" time="0.595"/>
+  <testcase name="testPromptWithValueAndOK" classname="alerts.AlertTest" time="0.744"/>
+  <testcase name="testPromptWithoutValueAndCancle" classname="alerts.AlertTest" time="0.613"/>
 </testsuite>
