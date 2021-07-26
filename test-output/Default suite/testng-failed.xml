@@ -7,8 +7,11 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testAlertAccept"/>
+          <include name="setUpSuite"/>
           <include name="goHome"/>
+          <include name="testJSConfirmAccept"/>
+          <include name="takeScreenshotWhenFail"/>
+          <include name="tearDownSuite"/>
         </methods>
       </class> <!-- alerts.AlertTest -->
     </classes>

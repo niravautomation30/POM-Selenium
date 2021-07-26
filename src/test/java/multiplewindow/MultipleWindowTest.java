@@ -15,6 +15,8 @@ public class MultipleWindowTest extends BaseTest {
 	public void testMultipleWindow() {
 		
 		log.info("\n===========Start testMultipleWindow method============");
+		logger = report.createTest("Multiple window test");
+		logger.info("start mulwindow");
 		
 		MultipleWindowsPage mulWinPage=homePage.clickOnMultipleWindows();	
 		
@@ -41,5 +43,6 @@ public class MultipleWindowTest extends BaseTest {
 		System.out.println("Parentwindow ID :"+mulWinPage.getPatentWindowID());
 		
 		log.info("\n===========End testMultipleWindow method============");
+		logger.pass("pass Multiple window test");
 	}
 }
