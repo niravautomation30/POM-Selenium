@@ -91,7 +91,7 @@ public class BaseTest extends TestListenerAdapter{
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
         String methodName = result.getName();
         if(!result.isSuccess()){
-            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            byte[] scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             try {
                 String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
                 File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+formater.format(calendar.getTime())+".png");

@@ -9,15 +9,112 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,752</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">99,023</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">multiplewindow.MultipleWindowTest</td><td><a href="#m0">testMultipleWindow</a></td><td rowspan="1">1627631901440</td><td rowspan="1">906</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">multiplewindow.MultipleWindowTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1627640248091</td><td rowspan="1">94055</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">multiplewindow.MultipleWindowTest</td><td><a href="#m1">goHome</a></td><td rowspan="1">1627640346215</td><td rowspan="1">-1627640346215</td></tr><tr class="skippedeven"><td><a href="#m2">onTestFailure</a></td><td rowspan="1">1627640346366</td><td rowspan="1">-1627640346366</td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td><td rowspan="1">1627640346603</td><td rowspan="1">-1627640346603</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">multiplewindow.MultipleWindowTest</td><td><a href="#m4">testMultipleWindow</a></td><td rowspan="1">1627640346359</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">multiplewindow.MultipleWindowTest#testMultipleWindow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/home/nirav/eclipse-workspace/PageObjectModelDemo/target/surefire-reports/failure_screenshots/testMultipleWindow on [MultipleWindowTest passed=0 failed=0 skipped=0]_30_07_2021_01_28_22.png'> <img src='/home/nirav/eclipse-workspace/PageObjectModelDemo/target/surefire-reports/failure_screenshots/testMultipleWindow on [MultipleWindowTest passed=0 failed=0 skipped=0]_30_07_2021_01_28_22.png' height='100' width='100'/> </a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: str_parent_win_title is INCORRECT expected [The Internet11111111] but found [The Internet]
-	at multiplewindow.MultipleWindowTest.testMultipleWindow(MultipleWindowTest.java:27)
+<h2>Test</h2><h3 id="m0">multiplewindow.MultipleWindowTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;nirav-Inspiron-3558&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.8.0-63-generic&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: #0 0x55abb5b08a63 &lt;unknown&gt;
+#1 0x55abb587d458 &lt;unknown&gt;
+#2 0x55abb58a2f22 &lt;unknown&gt;
+#3 0x55abb589f4e6 &lt;unknown&gt;
+#4 0x55abb589be9f &lt;unknown&gt;
+#5 0x55abb58d5b72 &lt;unknown&gt;
+#6 0x55abb58cffd3 &lt;unknown&gt;
+#7 0x55abb58a6514 &lt;unknown&gt;
+#8 0x55abb58a7505 &lt;unknown&gt;
+#9 0x55abb5b34e2e &lt;unknown&gt;
+#10 0x55abb5b4a886 &lt;unknown&gt;
+#11 0x55abb5b35d75 &lt;unknown&gt;
+#12 0x55abb5b4bd94 &lt;unknown&gt;
+#13 0x55abb5b2c8eb &lt;unknown&gt;
+#14 0x55abb5b66cd8 &lt;unknown&gt;
+#15 0x55abb5b66e58 &lt;unknown&gt;
+#16 0x55abb5b80dfd &lt;unknown&gt;
+#17 0x7f47ff376609 start_thread
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at basetest.BaseTest.setUp(BaseTest.java:57)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">multiplewindow.MultipleWindowTest#goHome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">multiplewindow.MultipleWindowTest#onTestFailure</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">multiplewindow.MultipleWindowTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">multiplewindow.MultipleWindowTest#testMultipleWindow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;nirav-Inspiron-3558&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.8.0-63-generic&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: #0 0x55abb5b08a63 &lt;unknown&gt;
+#1 0x55abb587d458 &lt;unknown&gt;
+#2 0x55abb58a2f22 &lt;unknown&gt;
+#3 0x55abb589f4e6 &lt;unknown&gt;
+#4 0x55abb589be9f &lt;unknown&gt;
+#5 0x55abb58d5b72 &lt;unknown&gt;
+#6 0x55abb58cffd3 &lt;unknown&gt;
+#7 0x55abb58a6514 &lt;unknown&gt;
+#8 0x55abb58a7505 &lt;unknown&gt;
+#9 0x55abb5b34e2e &lt;unknown&gt;
+#10 0x55abb5b4a886 &lt;unknown&gt;
+#11 0x55abb5b35d75 &lt;unknown&gt;
+#12 0x55abb5b4bd94 &lt;unknown&gt;
+#13 0x55abb5b2c8eb &lt;unknown&gt;
+#14 0x55abb5b66cd8 &lt;unknown&gt;
+#15 0x55abb5b66e58 &lt;unknown&gt;
+#16 0x55abb5b80dfd &lt;unknown&gt;
+#17 0x7f47ff376609 start_thread
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at basetest.BaseTest.setUp(BaseTest.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
