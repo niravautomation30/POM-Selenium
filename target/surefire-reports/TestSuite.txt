@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.865 s <<< FAILURE! - in TestSuite
-multiplewindow.MultipleWindowTest.testMultipleWindow on [MultipleWindowTest passed=0 failed=0 skipped=0]  Time elapsed: 0.595 s  <<< FAILURE!
-java.lang.AssertionError: str_parent_win_title is INCORRECT expected [The Internet11111111] but found [The Internet]
-	at multiplewindow.MultipleWindowTest.testMultipleWindow(MultipleWindowTest.java:27)
-

@@ -13,7 +13,7 @@
           <include name="setUpSuite"/>
           <include name="testMultipleWindow"/>
           <include name="goHome"/>
-          <include name="onTestFailure"/>
+          <include name="takeScreenshotWhenFail"/>
           <include name="tearDownSuite"/>
         </methods>
       </class> <!-- multiplewindow.MultipleWindowTest -->

@@ -1,11 +1,15 @@
 package basetest;
 
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
+import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -65,7 +69,7 @@ public class BaseTest extends TestListenerAdapter{
 		homePage = new HomePage(driver);
 	}
 
-	//@AfterMethod
+	@AfterMethod
 	public void takeScreenshotWhenFail(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String path = System.getProperty("user.dir") + "/Screenshots/" + getDate() + ".png";
@@ -85,17 +89,19 @@ public class BaseTest extends TestListenerAdapter{
 		}
 	}
 	
-	@AfterMethod
+//	@AfterMethod
 	public void onTestFailure(ITestResult result) {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
         String methodName = result.getName();
         if(!result.isSuccess()){
-            byte[] scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//            byte[] scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
+//            	BufferedImage image = ImageIO.read(new ByteArrayInputStream(scrFile));
                 String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
                 File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+formater.format(calendar.getTime())+".png");
-                FileUtils.copyFile(scrFile, destFile);
+                FileUtils.copyFile(scrFile, destFile);               
                 Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
             } catch (IOException e) {
                 e.printStackTrace();
