@@ -3,6 +3,7 @@ package basetest;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -13,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -28,9 +30,9 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.HomePage;
 
-public class BaseTest {
+public class BaseTest extends TestListenerAdapter{
 
-	private WebDriver driver;
+	private static WebDriver driver;
 	protected HomePage homePage;
 	public ExtentReports report;
 	public ExtentTest logger;
@@ -63,13 +65,15 @@ public class BaseTest {
 		homePage = new HomePage(driver);
 	}
 
-	@AfterMethod
+	//@AfterMethod
 	public void takeScreenshotWhenFail(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String path = System.getProperty("user.dir") + "/Screenshots/" + getDate() + ".png";
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			File destFile= new File(path);
 			try {
-				FileUtils.copyFile(scrFile, new File(path));
+				FileUtils.copyFile(scrFile, destFile);
+				Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='400' width='400'/> </a>");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -80,6 +84,24 @@ public class BaseTest {
 			}
 		}
 	}
+	
+	@AfterMethod
+	public void onTestFailure(ITestResult result) {
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+        String methodName = result.getName();
+        if(!result.isSuccess()){
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            try {
+                String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
+                File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+formater.format(calendar.getTime())+".png");
+                FileUtils.copyFile(scrFile, destFile);
+                Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
 	@AfterClass
 	public void tearDown() {

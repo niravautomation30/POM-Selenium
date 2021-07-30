@@ -24,7 +24,7 @@ public class MultipleWindowTest extends BaseTest {
 		System.out.println("Parentwindow Title :"+str_parent_win_title);
 		System.out.println("Parentwindow Heading :"+mulWinPage.getWindowHeading());
 		System.out.println("Parentwindow ID :"+mulWinPage.getPatentWindowID());
-		Assert.assertEquals(str_parent_win_title, "The Internet", "str_parent_win_title is INCORRECT");
+		Assert.assertEquals(str_parent_win_title, "The Internet11111111", "str_parent_win_title is INCORRECT");
 		mulWinPage.triggerClick();
 		mulWinPage.moveToChildWindow();
 		
